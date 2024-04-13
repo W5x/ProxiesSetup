@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Enter the username
-username="DrNet"
+username="girgis"
 while [[ $username = "" ]]; do
     echo "Enter the proxy username"
     read -p "username: " username
