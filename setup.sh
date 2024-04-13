@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Enter the username
-username=""
+username="DrNet"
 while [[ $username = "" ]]; do
     echo "Enter the proxy username"
     read -p "username: " username
@@ -19,7 +19,7 @@ while [[ $username = "" ]]; do
 done
 
 # Enter the proxy user password
-password=""
+password="012010"
 while [[ $password = "" ]]; do
     echo "Enter the proxy password"
     read -p "password: " password
@@ -81,7 +81,7 @@ http_access deny to_localhost
 icp_access deny all
 htcp_access deny all
 
-http_port 9099
+http_port 3128
 hierarchy_stoplist cgi-bin ? # systemctl status squid.service after installation squid and danted by this script
                              # ERROR: Directive 'hierarchy_stoplist' is obsolete.
 access_log /var/log/squid/access.log squid
@@ -137,7 +137,7 @@ echo "--------------------------------------------------------------------------
 echo "--------------------------------------------------------------------------------------------------"
 echo "--------------------------------------------------------------------------------------------------"
 echo "Proxy IP: $external_ip"
-echo "HTTP port: 9099"
+echo "HTTP port: 3128"
 echo "SOCKS5 port: 9098"
 echo "Username: $username"
 echo "Password: $password"
