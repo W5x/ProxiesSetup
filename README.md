@@ -11,5 +11,5 @@ apt-get install curl -y
 ```
 
 ```
-bash <(curl -s "https://raw.githubusercontent.com/AdguardTeam/ProxiesSetup/master/setup.sh")
+bash <(curl -s "https://raw.githubusercontent.com/W5x/ProxiesSetup/master/setup.sh")
 ```
