@@ -141,10 +141,11 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 echo -e "${NC}"
 
-echo -e "${GREEN}Browser Format{NC}"
+echo -e "${GREEN}Browser Format${NC}"
 echo -e "${GREEN}HTTP Proxy : http://$external_ip:3128:$username:$password${NC}"
 echo -e "${GREEN}SOCKS5 Proxy : socks5://$external_ip:9098:$username:$password${NC}"
 echo 
-echo -e "${CYAN}Bot Format{NC}"
-echo -e "${CYAN}HTTP Proxy : http://$username:$password@$external_ip:3128{NC}"
-echo -e "${CYAN}SOCKS5 Proxy : socks5://$username:$password@$external_ip:9098{NC}"
+echo -e "${GREEN}Bot Format{NC}"
+echo -e "${GREEN}HTTP Proxy : http://$username:$password@$external_ip:3128${NC}"
+echo -e "${GREEN}SOCKS5 Proxy : socks5://$username:$password@$external_ip:9098${NC}"
+echo
