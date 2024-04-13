@@ -136,10 +136,15 @@ systemctl restart danted.service
 echo "--------------------------------------------------------------------------------------------------"
 echo "--------------------------------------------------------------------------------------------------"
 echo "--------------------------------------------------------------------------------------------------"
-echo "Browser Format"
-echo "HTTP Proxy : http://$external_ip:3128:$username:$password"
-echo "SOCKS5 Proxy : socks5://$external_ip:9098:$username:$password"
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+NC='\033[0m'
+echo -e "${NC}"
 
-echo "Bot Format"
-echo "HTTP Proxy : http://$username:$password@$external_ip:3128"
-echo "SOCKS5 Proxy : socks5://$username:$password@$external_ip:9098"
+echo "${GREEN}Browser Format{NC}"
+echo "${GREEN}HTTP Proxy : http://$external_ip:3128:$username:$password${NC}"
+echo "${GREEN}SOCKS5 Proxy : socks5://$external_ip:9098:$username:$password${NC}"
+echo 
+echo "${CYAN}Bot Format{NC}"
+echo "${CYAN}HTTP Proxy : http://$username:$password@$external_ip:3128{NC}"
+echo "${CYAN}SOCKS5 Proxy : socks5://$username:$password@$external_ip:9098{NC}"
